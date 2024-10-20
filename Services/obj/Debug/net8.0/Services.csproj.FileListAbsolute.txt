@@ -1,0 +1,17 @@
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Services.deps.json
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Services.dll
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Services.pdb
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Domain.dll
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Infra.dll
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Domain.pdb
+D:\Usuário\Desktop\TasksApp\Services\bin\Debug\net8.0\Infra.pdb
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.dll
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\refint\Services.dll
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.pdb
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\ref\Services.dll
