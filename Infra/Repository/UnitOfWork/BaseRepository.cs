@@ -13,9 +13,15 @@ namespace Infra.Repository.UnitOfWork
             return command;
         }
 
-        public Task Delete(Guid id)
+        public Task Delete(T entity)
         {
-            _context.Remove(id);
+            _context.Set<T>().Remove(entity);
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteRange(List<T> range)
+        { 
+            _context.Set<T>().RemoveRange(range);
             return Task.CompletedTask;
         }
 

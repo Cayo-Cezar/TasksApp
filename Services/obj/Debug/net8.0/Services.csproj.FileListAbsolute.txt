@@ -15,3 +15,4 @@ D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.dll
 D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\refint\Services.dll
 D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.pdb
 D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\ref\Services.dll
+D:\Usuário\Desktop\TasksApp\Services\obj\Debug\net8.0\Services.sourcelink.json

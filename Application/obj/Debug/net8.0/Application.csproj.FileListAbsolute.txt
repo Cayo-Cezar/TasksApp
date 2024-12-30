@@ -17,3 +17,4 @@ D:\Usuário\Desktop\TasksApp\Application\obj\Debug\net8.0\Application.dll
 D:\Usuário\Desktop\TasksApp\Application\obj\Debug\net8.0\refint\Application.dll
 D:\Usuário\Desktop\TasksApp\Application\obj\Debug\net8.0\Application.pdb
 D:\Usuário\Desktop\TasksApp\Application\obj\Debug\net8.0\ref\Application.dll
+D:\Usuário\Desktop\TasksApp\Application\obj\Debug\net8.0\Application.sourcelink.json

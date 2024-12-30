@@ -149,3 +149,4 @@ D:\Usuário\Desktop\TasksApp\API\obj\Debug\net8.0\refint\API.dll
 D:\Usuário\Desktop\TasksApp\API\obj\Debug\net8.0\API.pdb
 D:\Usuário\Desktop\TasksApp\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\Usuário\Desktop\TasksApp\API\obj\Debug\net8.0\ref\API.dll
+D:\Usuário\Desktop\TasksApp\API\obj\Debug\net8.0\API.sourcelink.json

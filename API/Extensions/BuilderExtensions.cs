@@ -15,7 +15,7 @@ using Infra.Repository.IRepository;
 using Infra.Repository.Repositories;
 using Infra.Repository.UnitOfWork;
 
-namespace API
+namespace API.Extensions
 {
     public static class BuilderExtensions
     {
@@ -25,7 +25,7 @@ namespace API
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Version = "v1", 
+                    Version = "v1",
                     Title = "TasksApp",
                     Description = "Aplicativo de tarefas baseado no Trello e escrito em ASP.NET Core V8",
                     Contact = new OpenApiContact
@@ -38,7 +38,7 @@ namespace API
         }
         public static void AddJwtAuth(this WebApplicationBuilder builder)
         {
-            var configuration  = builder.Configuration;
+            var configuration = builder.Configuration;
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
@@ -59,22 +59,22 @@ namespace API
                 options.Cookie.HttpOnly = true;
                 options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
                 options.Cookie.SameSite = SameSiteMode.Strict; // O Cookie aceito só vai ser aceito se ele vier do site que o definiu.
-                options.ExpireTimeSpan = TimeSpan.FromDays(7);  
-            });                
-                
+                options.ExpireTimeSpan = TimeSpan.FromDays(7);
+            });
+
         }
 
         public static void AddServices(this WebApplicationBuilder builder)
         {
             builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();       
+            builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddMediatR(config => config.RegisterServicesFromAssemblies(typeof(CreateUserCommand).Assembly));
 
         }
 
         public static void AddDatabase(this WebApplicationBuilder builder)
         {
-            var configuration = builder.Configuration;  
+            var configuration = builder.Configuration;
             builder.Services.AddDbContext<TasksDbContext>
                 (options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         }
@@ -98,7 +98,9 @@ namespace API
         public static void AddRepositories(this WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<IUserRepository, UserRepository>();
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();  
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IWorkspaceRepository, WorkspaceRepository>();
+            builder.Services.AddScoped<IListsCardsRepository, ListsCardsRepository>();
         }
 
     }

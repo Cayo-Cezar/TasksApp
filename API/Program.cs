@@ -1,4 +1,5 @@
-using API;
+using API.Controllers;
+using API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,5 +26,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.WorkspacesRoute();
 
 app.Run();

@@ -10,7 +10,8 @@ namespace Infra.Repository.UnitOfWork
         IEnumerable<T> GetAll();
         Task<T> Create(T command);
         Task<T> Update(T commandUpdate);
-        Task Delete(Guid id);
+        Task Delete(T entity);
+        Task DeleteRange(List<T> range);
 
     }
 }
